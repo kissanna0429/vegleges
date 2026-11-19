@@ -1,0 +1,15 @@
+.navbar {
+  display: flex;
+  padding: 1rem;
+}
+
+.navbar ul {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-left: auto;
+}
+
+.navbar img {
+  width: 50px;
+}
