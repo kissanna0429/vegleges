@@ -1,6 +1,8 @@
 .navbar {
   display: flex;
+  align-items: center;
   padding: 1rem;
+  background-color: lightgray;
 }
 
 .navbar ul {
@@ -12,4 +14,15 @@
 
 .navbar img {
   width: 50px;
+}
+
+.navbar #open-menu,
+.navbar #close-menu {
+  display: none;
+}
+
+@media screen and (max-width: 768px) {
+  .navbar #open-menu {
+    display: block;
+  }
 }
