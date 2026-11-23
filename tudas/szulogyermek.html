@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="hu">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>szulo es gyermek</title>
+  </head>
+  <body>
+    <style>
+      .szulo {
+        display: flex;
+        flex-direction: column;
+        gap: 5rem;
+      }
+
+      .szulo button {
+        font-size: 2rem;
+      }
+
+      .szulo button:first-child {
+        color: blueviolet;
+      }
+
+      .szulo button:last-child {
+        color: chocolate;
+      }
+
+      .szulo button:nth-child(3),
+      .szulo button:nth-child(4) {
+        color: red;
+      }
+      .szulo button:nth-child(2n + 1) {
+        font-weight: 800;
+      }
+    </style>
+
+    <div class="szulo">
+      <button>egy</button>
+      <button>ketto</button>
+      <button>harom</button>
+      <button>negy</button>
+      <button>ot</button>
+    </div>
+
+    <style>
+      .szulo-1 > p:nth-child(2) {
+        color: orange;
+      }
+    </style>
+
+    <div class="szulo">
+      <p>gyerek</p>
+      <p>szines akarok lenni</p>
+      <div class="szulo-2">
+        <p>gyerek</p>
+        <p>gyerek</p>
+      </div>
+      <p>gyerek</p>
+    </div>
+  </body>
+</html>

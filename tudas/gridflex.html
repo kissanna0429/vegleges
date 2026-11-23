@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="hu">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Grid és Flex</title>
+  </head>
+  <body>
+    <style>
+      .matrica {
+        height: 50px;
+        width: fit-content;
+        background-color: yellow;
+        padding: 0.5rem; /*belső margó*/
+        font-size: 2rem; /*betumeret*/
+      }
+
+      .matrica-flex {
+        display: flex;
+        flex-direction: row;
+        gap: 1rem;
+      }
+
+      .matrica-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+      }
+    </style>
+
+    <div class="matrica-flex">
+      <div class="matrica">@_1</div>
+      <div class="matrica">@__2</div>
+      <div class="matrica">@_3</div>
+    </div>
+
+    <br />
+
+    <div class="matrica-grid">
+      <div class="matrica">@_1</div>
+      <div class="matrica">@__2</div>
+      <div class="matrica">@_3</div>
+    </div>
+  </body>
+</html>
